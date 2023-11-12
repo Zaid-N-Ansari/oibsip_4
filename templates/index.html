@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/images/site.webmanifest' %}">
+    <link rel="shortcut icon" href="https://emojipedia.org/military-medal" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute ot the Missile Man</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+    <link rel="stylesheet" href="https://use.typekit.net/bgl2vqv.css" />
+    <script src="https://kit.fontawesome.com/4f5382bc8b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#biography">Biography</a></li>
+            <h1 class="logo">Tribute Page</h1>
+            <li><a href="#achievement">Achievement</a></li>
+        </ul>
+    </nav>
+    <section class="main-page">
+        <a href="#biography"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+    <section id="biography" class="biography content">
+        <div class="biography-content">
+            <h1>Biography</h1>
+            <article>
+                <p>
+                    Dr. A.P.J. Abdul Kalam (1931-2015) was an eminent Indian scientist
+                    and the 11th President of India. Born on October 15, 1931, in
+                    Rameswaram, Tamil Nadu, he showed early promise in science and
+                    aviation. <br />
+                    Kalam joined the DRDO in 1958 and played a pivotal role in India's
+                    missile and space programs, earning him the moniker "Missile Man of
+                    India."
+                </p>
+                <p>
+                    In 2002, he became President, focusing on education and youth
+                    development. His vision was for India to become a developed nation
+                    by 2020. Kalam passed away on July 27, 2015, leaving behind a legacy
+                    of scientific achievement and inspiration for generations
+                </p>
+            </article>
+        </div>
+        <div class="kalam-img">
+            <img width="100%" height="100%" src="{% static '/images/28TH_KALAMTEACHER.jpeg' %}" alt="" />
+        </div>
+    </section>
+
+    <section class="slider" id="tribute">
+        <div class="carousel-container" id="carousel-container">
+            <div class="carousel active">
+                <img src="{% static '/images/slider1.jpg' %}" alt="first-image" width="100%" height="100%" />
+                <div class="carousel-content">
+                    <h2>89th Birth Anniversary</h2>
+                    <p>
+                        Former President Dr APJ Abdul Kalam was born on October 15, 1931.
+                        He was both a great President and scientist who in his numerous
+                        ways has contributed to the development of the country in various
+                        spheres. He successfully led the development of Agni and Prithvi,
+                        the indigenous guided missiles. Let's take a look at his five
+                        other major scientific offerings to India.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel">
+                <img alt="second-image" src="{% static '/images/slider2.webp' %}" width="100%" />
+                <div class="carousel-content">
+                    <h2>India's first Satellite Launch Vehicle (SLV)</h2>
+                    <p>
+                        Dr Kalam's had put in over 10-year-long hard work as the project
+                        director for the development of the indigenous Satellite Launch
+                        Vehicle at ISRO that ultimately resulted in one of the greatest
+                        scientific development of indigenous Satellite Launch Vehicle
+                        (SLV).
+                    </p>
+                </div>
+            </div>
+            <div class="carousel">
+                <img src="{% static '/images/slider3.webp' %}" alt="third-image" width="100%" />
+                <div class="carousel-content">
+                    <h2>Ballistic missiles project</h2>
+                    <p>
+                        The projects Devil and Valiant headed by APJ Abdul Kalam aimed at
+                        developing ballistic missiles using the technology behind the
+                        successful SLV program. Under Kalam Mission, the two missiles Agni
+                        and Prithvi did get the boost along with other projects.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel">
+                <img src="{% static '/images/slider4.jpg' %}" alt="fourth-slider" width="100%" />
+                <div class="carousel-content">
+                    <h2>Nuclear tests at Pokhran</h2>
+                    <p>
+                        Abdul Kalam played a major role in heading the Pokhran-II nuclear
+                        testing, being the chief scientific man of the then Prime
+                        Minister, leading to him being known as the best nuclear scientist
+                        of the country at that time. The nuclear testing under the
+                        supervision of Kalam during the period of July 1992 to December
+                        1999 made India a nuclear-armed state.
+                    </p>
+                </div>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+        <div class="dots">
+            <div class="video-icons">
+                <i id="resume" class="fa-solid fa-play resume"></i>
+                <i id="pause" class="fa-solid fa-pause pause"></i>
+            </div>
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section id="achievement" class="achievement content">
+        <div class="kalam-img">
+            <img width="100%" height="100%" src="{% static '/images/kalam-achievement.jpg' %}" alt="" />
+        </div>
+        <div class="biography-content">
+            <h1>Achievement</h1>
+            <article>
+                <p>
+                    In 1960, Dr Kalam joined the Defence Research and Development
+                    Organisation (DRDO) (DRDO) after he finished his graduation from the
+                    Madras Institute of Technology.
+                </p>
+                <p>
+                    In DRDO, Kalam was responsible for designing helicopters for the
+                    Indian Army.
+                </p>
+                <p>
+                    Dr Kalam was selected as the project director for SLV-III, India’s
+                    first indigenous satellite launch vehicle, after he joined the
+                    Indian Space Research Organisation (ISRO).
+                </p>
+                <p>
+                    After SLV-III was successful in launching the satellite Rohini to
+                    orbit in July 1980, Dr Kalam started expanding India’s space
+                    programme on a wider scale.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 · Tribute Page by @Zaid Ansari</p>
+        <div class="social-icon">
+            <a target="_blank" href="https://www.linkedin.com/in/zaid-ansari-71a0a1292/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="{% static '/js/app.js' %}"></script>
+</body>
+
+</html>
